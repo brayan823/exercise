@@ -1,24 +1,29 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { CodeChallengeController } from './code-challenge/code-challenge.controller';
-import { CoffeeEntity } from './code-challenge/code-challenge.entity';
-import { CodeChallengeModule } from './code-challenge/code-challenge.module';
+import { join } from 'path';
+
+import { CoffeeController } from './coffee/coffee.controller';
+import { Coffee } from './coffee/entities/coffee.entity';
+import { CoffeeModule } from './coffee/coffe.module';
+import { CoffeeService } from './coffee/coffee.service';
+import { TeaModule } from './tea/tea.module';
 
 @Module({
   imports: [
     TypeOrmModule.forRoot({
       type: 'postgres',
-      host: 'localhost',
+      host: '127.0.0.1',
       port: 5432,
       username: 'postgres',
       password: '1234',
       database: 'mvst-coffee-tea-challenge-db',
-      entities: [CoffeeEntity],
-      synchronize: true,
+      entities: [join(__dirname, '**', '*.entity.{ts,js}')],
+      synchronize: false,
     }),
-    CodeChallengeModule,
+    CoffeeModule,
+    TeaModule,
   ],
-  controllers: [CodeChallengeController],
+  controllers: [],
   providers: [],
 })
 export class AppModule {}
