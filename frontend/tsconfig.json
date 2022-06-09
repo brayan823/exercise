@@ -22,11 +22,11 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "**/*.js",
-    "react-admin/index.jsx",
-    "./src",
-    "./setupTests.ts",
-    "./jest.config.ts"
+    "**/*.js"
+    // "react-admin/index.jsx",
+    // "./src",
+    // "./setupTests.ts",
+    // "./jest.config.ts"
   ],
   "exclude": ["node_modules"]
 }

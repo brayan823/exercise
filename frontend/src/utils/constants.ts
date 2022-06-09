@@ -1,0 +1,2 @@
+export const FOOTER_IMG =
+  "https://s3-alpha-sig.figma.com/img/1c14/bfb4/c099083338e172f09123eb37d8b8ce9f?Expires=1655683200&Signature=F4WlH1wt-IjQBnnCWV45YYjOOAGAj3gs2Es91ooodhvDKn-ctbNlJ6nStEHXVBY99IvG5BJ2JS2uAIHYYL8bYLFTjfEc70-cIk8jrNecAgJz4PqDi9Ff-6hTi467QldJkywpzxPx-ajZt9aSVieqrTOIY1Gkm5i-X69qdiJRdnB6y5xdetSnBldhtoy~7ROdv0R7kXrnVXMoCLcRuSdeS5JqzPku3Shtjw-R8GbnJVdqxfZDo4iYLHdx1e6GAKlx~G06c2ssztlrWOHFu9BLoE3A~5SceDWNmBIk9TcjuooEjtujEcXx5hVcAzFEfHwzV8Fl57s78kVKdyS9wjri2A__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA";

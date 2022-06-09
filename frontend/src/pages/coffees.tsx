@@ -1,10 +1,14 @@
-import React from 'react';
-import { fetchCoffeeService } from '../app/coffees/application/fetchCoffeeService';
-import { CoffeeMapper } from '../app/coffees/infrastructure/coffee.mapper';
-import { CoffeePage } from '../app/coffees/presentation/pages/CoffeePage';
+import { NextPage } from "next";
+import React from "react";
+import fetchApi from "src/api/coffeeApi";
+import { Layout } from "src/components/Layout";
+import { CoffeePage } from "../components/CoffeePage";
 
+interface Props {
+  data: Coffee[];
+}
 export async function getStaticProps() {
-  const data = await fetchCoffeeService();
+  const data = await fetchApi("get", "http://localhost:3000/coffee");
   return {
     props: {
       data,
@@ -12,7 +16,12 @@ export async function getStaticProps() {
   };
 }
 
-export default function Index({ data }: any): JSX.Element {
-  const domainData = data.map(CoffeeMapper.toDomain);
-  return <CoffeePage data={domainData} />;
-}
+const Index: NextPage<Props> = ({ data }: Props) => {
+  return (
+    <Layout>
+      <CoffeePage data={data} />
+    </Layout>
+  );
+};
+
+export default Index;
