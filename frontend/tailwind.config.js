@@ -84,7 +84,6 @@ module.exports = {
         menuEntry: "#ffffff",
       },
       width: {
-        // card: "264px",
         img: "248px",
         logo: "222px",
       },
@@ -117,9 +116,6 @@ module.exports = {
         10: "10px",
       },
       gridTemplateColumns: {
-        // sm: "repeat(1, minmax(264px, 100%))",
-        // md: "repeat(2, minmax(264px, 264px))",
-        // lg: "repeat(4, minmax(264px, 264px))",
         xs: "repeat(1, minmax(264px, 100%))",
         sm: "repeat(2, minmax(264px, 264px))",
         md: "repeat(3, minmax(264px, 264px))",
