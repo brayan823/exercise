@@ -6,6 +6,7 @@ import { Coffee } from './entities/coffee.entity';
 import { CoffeeController } from './coffee.controller';
 import { CoffeeService } from './coffee.service';
 import { INestApplication } from '@nestjs/common';
+import { CoffeeModule } from './coffe.module';
 
 describe('Testing Coffee Controller', () => {
   let controller: CoffeeController;

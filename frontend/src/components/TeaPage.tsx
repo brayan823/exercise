@@ -1,21 +1,18 @@
 import React from "react";
 import { Card } from "./Card";
 import { Title } from "./Title";
-import { Footer } from "./Footer";
 
-import { COFFEE_TEXTS } from "src/utils/generalTexts";
+import { TEA_TEXTS } from "src/utils/generalTexts";
+import { Footer } from "./Footer";
 
 type CoffeeT = {
   data: Card[];
 };
 
-export const CoffeePage = ({ data }: CoffeeT) => {
+export const TeaPage = ({ data }: CoffeeT) => {
   return (
     <div className="mt-10">
-      <Title
-        title={COFFEE_TEXTS.title}
-        description={COFFEE_TEXTS.description}
-      />
+      <Title title={TEA_TEXTS.title} description={TEA_TEXTS.description} />
       <div className="grid gap-5 grid-cols-xs sm:grid-cols-sm md:grid-cols-md lg:grid-cols-lg mb-10">
         {data.map((coffee) => (
           <Card

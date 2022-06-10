@@ -38,16 +38,16 @@ module.exports = {
           lineHeight: "15px",
         },
       ],
-      banner: [
-        "24px",
-        {
-          lineHeight: "29px",
-        },
-      ],
       bannerMobile: [
         "52px",
         {
           lineHeight: "39px",
+        },
+      ],
+      banner: [
+        "24px",
+        {
+          lineHeight: "29px",
         },
       ],
       description: [
@@ -68,6 +68,7 @@ module.exports = {
         bgType: "#CD4C15",
         bgAlternativeType: "#758266",
         banner: "#fbfaf8",
+        bannerMobile: "#fbfaf8",
       },
       borderRadius: {
         input: "0.625rem",
@@ -109,12 +110,19 @@ module.exports = {
         logo: "156px",
         logoMobile: "0",
       },
+      padding: {
+        logo: "156px",
+      },
       borderWidth: {
         10: "10px",
       },
       gridTemplateColumns: {
-        sm: "repeat(1, minmax(264px, 100%))",
-        md: "repeat(2, minmax(264px, 264px))",
+        // sm: "repeat(1, minmax(264px, 100%))",
+        // md: "repeat(2, minmax(264px, 264px))",
+        // lg: "repeat(4, minmax(264px, 264px))",
+        xs: "repeat(1, minmax(264px, 100%))",
+        sm: "repeat(2, minmax(264px, 264px))",
+        md: "repeat(3, minmax(264px, 264px))",
         lg: "repeat(4, minmax(264px, 264px))",
       },
     },
